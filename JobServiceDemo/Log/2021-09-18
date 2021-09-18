@@ -1,0 +1,58 @@
+2021-09-18 18:25:57,494 [1] INFO  Topshelf.HostFactory - Configuration Result:
+[Success] Name JobService
+[Success] Description 用于系统定时任务计划执行
+[Success] ServiceName JobService
+ Topshelf.HostFactoryname2021-09-18 18:25:57,522 [1] INFO  Topshelf.HostConfigurators.HostConfiguratorImpl - Topshelf v4.3.0.0, .NET Core 3.1.16 (3.1.16)
+ Topshelf.HostConfigurators.HostConfiguratorImplname2021-09-18 18:25:57,659 [1] INFO  Quartz.Impl.StdSchedulerFactory - Quartz.NET properties loaded from configuration file 'E:\项目\git\Topshelf-log4net-quartz\JobServiceDemo\bin\Debug\netcoreapp3.1\quartz.config'
+ Quartz.Impl.StdSchedulerFactoryname2021-09-18 18:25:57,722 [1] WARN  Quartz.Simpl.TaskSchedulingThreadPool - Thread priority is no longer supported for thread pool, ignoring
+ Quartz.Simpl.TaskSchedulingThreadPoolname2021-09-18 18:25:57,748 [1] DEBUG Quartz.Simpl.TaskSchedulingThreadPool - TaskSchedulingThreadPool configured with max concurrency of 10 and TaskScheduler ThreadPoolTaskScheduler.
+ Quartz.Simpl.TaskSchedulingThreadPoolname2021-09-18 18:25:57,795 [1] INFO  Quartz.Core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+ Quartz.Core.SchedulerSignalerImplname2021-09-18 18:25:57,796 [1] INFO  Quartz.Core.QuartzScheduler - Quartz Scheduler created
+ Quartz.Core.QuartzSchedulername2021-09-18 18:25:57,806 [1] INFO  Quartz.Plugin.Xml.XMLSchedulingDataProcessorPlugin - Registering Quartz Job Initialization Plug-in.
+ Quartz.Plugin.Xml.XMLSchedulingDataProcessorPluginname2021-09-18 18:25:57,808 [1] INFO  Quartz.Simpl.RAMJobStore - RAMJobStore initialized.
+ Quartz.Simpl.RAMJobStorename2021-09-18 18:25:57,811 [1] INFO  Quartz.Core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v3.3.3.0) 'QuartzTest' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ Quartz.Core.QuartzSchedulername2021-09-18 18:25:57,812 [1] INFO  Quartz.Impl.StdSchedulerFactory - Quartz scheduler 'QuartzTest' initialized
+ Quartz.Impl.StdSchedulerFactoryname2021-09-18 18:25:57,812 [1] INFO  Quartz.Impl.StdSchedulerFactory - Quartz scheduler version: 3.3.3.0
+ Quartz.Impl.StdSchedulerFactoryname2021-09-18 18:25:57,846 [1] DEBUG Topshelf.Builders.RunBuilder - Running as a console application, creating the console host.
+ Topshelf.Builders.RunBuildername2021-09-18 18:25:57,869 [1] DEBUG Topshelf.Hosts.ConsoleRunHost - Starting up as a console application
+ Topshelf.Hosts.ConsoleRunHostname2021-09-18 18:25:57,909 [1] INFO  Quartz.Xml.XMLSchedulingDataProcessor - Parsing XML file: E:\项目\git\Topshelf-log4net-quartz\JobServiceDemo\bin\Debug\netcoreapp3.1\quartz_jobs.xml with systemId: ~/quartz_jobs.xml
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:57,938 [1] INFO  Topshelf.Hosts.ConsoleRunHost - The JobService service is now running, press Control+C to exit.
+ Topshelf.Hosts.ConsoleRunHostname2021-09-18 18:25:58,087 [6] DEBUG Quartz.Xml.XMLSchedulingDataProcessor - Found 0 delete job group commands.
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,087 [6] DEBUG Quartz.Xml.XMLSchedulingDataProcessor - Found 0 delete trigger group commands.
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,087 [6] DEBUG Quartz.Xml.XMLSchedulingDataProcessor - Found 0 delete job commands.
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,087 [6] DEBUG Quartz.Xml.XMLSchedulingDataProcessor - Found 0 delete trigger commands.
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,087 [6] DEBUG Quartz.Xml.XMLSchedulingDataProcessor - Directive 'overwrite-existing-data' specified as: True
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,087 [6] DEBUG Quartz.Xml.XMLSchedulingDataProcessor - Directive 'ignore-duplicates' specified as: False
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,087 [6] DEBUG Quartz.Xml.XMLSchedulingDataProcessor - Directive 'schedule-trigger-relative-to-replaced-trigger' specified as: False
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,087 [6] DEBUG Quartz.Xml.XMLSchedulingDataProcessor - Found 1 job definitions.
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,090 [6] DEBUG Quartz.Xml.XMLSchedulingDataProcessor - Parsed job definition: JobDetail 'Test.TestJob':  jobType: 'JobServiceDemo.TestJob persistJobDataAfterExecution: False concurrentExecutionDisallowed: False isDurable: True requestsRecovers: False
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,090 [6] DEBUG Quartz.Xml.XMLSchedulingDataProcessor - Found 1 trigger definitions.
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,109 [6] DEBUG Quartz.Xml.XMLSchedulingDataProcessor - Parsed trigger definition: Trigger 'TestTrigger.TestJobTrigger':  triggerClass: 'Quartz.Impl.Triggers.CronTriggerImpl calendar: '' misfireInstruction: 0 nextFireTime: 
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,152 [6] INFO  Quartz.Xml.XMLSchedulingDataProcessor - Adding 1 jobs, 1 triggers.
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,154 [6] INFO  Quartz.Xml.XMLSchedulingDataProcessor - Adding job: Test.TestJob
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,158 [6] DEBUG Quartz.Xml.XMLSchedulingDataProcessor - Scheduling job: Test.TestJob with trigger: TestTrigger.TestJobTrigger
+ Quartz.Xml.XMLSchedulingDataProcessorname2021-09-18 18:25:58,178 [6] INFO  Quartz.Core.QuartzScheduler - Scheduler QuartzTest_$_NON_CLUSTERED started.
+ Quartz.Core.QuartzSchedulername2021-09-18 18:25:58,186 [4] DEBUG Quartz.Core.QuartzSchedulerThread - Batch acquisition of 1 triggers
+ Quartz.Core.QuartzSchedulerThreadname2021-09-18 18:25:58,207 [4] DEBUG Quartz.Simpl.SimpleJobFactory - Producing instance of Job 'Test.TestJob', class=JobServiceDemo.TestJob
+ Quartz.Simpl.SimpleJobFactoryname2021-09-18 18:25:58,210 [4] DEBUG Quartz.Core.QuartzSchedulerThread - Batch acquisition of 1 triggers
+ Quartz.Core.QuartzSchedulerThreadname2021-09-18 18:25:58,230 [7] DEBUG Quartz.Core.JobRunShell - Calling Execute on job Test.TestJob
+ Quartz.Core.JobRunShellname2021-09-18 18:25:58,230 [7] INFO  JobServiceDemo.TestJob - 每3秒输出
+ JobServiceDemo.TestJobname2021-09-18 18:25:58,232 [7] DEBUG Quartz.Core.JobRunShell - Trigger instruction : NoInstruction
+ Quartz.Core.JobRunShellname2021-09-18 18:26:00,003 [4] DEBUG Quartz.Simpl.SimpleJobFactory - Producing instance of Job 'Test.TestJob', class=JobServiceDemo.TestJob
+ Quartz.Simpl.SimpleJobFactoryname2021-09-18 18:26:00,006 [7] DEBUG Quartz.Core.JobRunShell - Calling Execute on job Test.TestJob
+ Quartz.Core.JobRunShellname2021-09-18 18:26:00,013 [7] INFO  JobServiceDemo.TestJob - 每3秒输出
+ JobServiceDemo.TestJobname2021-09-18 18:26:00,013 [4] DEBUG Quartz.Core.QuartzSchedulerThread - Batch acquisition of 1 triggers
+ Quartz.Core.QuartzSchedulerThreadname2021-09-18 18:26:00,016 [7] DEBUG Quartz.Core.JobRunShell - Trigger instruction : NoInstruction
+ Quartz.Core.JobRunShellname2021-09-18 18:26:03,005 [4] DEBUG Quartz.Simpl.SimpleJobFactory - Producing instance of Job 'Test.TestJob', class=JobServiceDemo.TestJob
+ Quartz.Simpl.SimpleJobFactoryname2021-09-18 18:26:03,006 [8] DEBUG Quartz.Core.JobRunShell - Calling Execute on job Test.TestJob
+ Quartz.Core.JobRunShellname2021-09-18 18:26:03,007 [8] INFO  JobServiceDemo.TestJob - 每3秒输出
+ JobServiceDemo.TestJobname2021-09-18 18:26:03,007 [4] DEBUG Quartz.Core.QuartzSchedulerThread - Batch acquisition of 1 triggers
+ Quartz.Core.QuartzSchedulerThreadname2021-09-18 18:26:03,008 [8] DEBUG Quartz.Core.JobRunShell - Trigger instruction : NoInstruction
+ Quartz.Core.JobRunShellname
